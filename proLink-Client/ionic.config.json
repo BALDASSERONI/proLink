@@ -1,0 +1,7 @@
+{
+  "name": "proLink-Client",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

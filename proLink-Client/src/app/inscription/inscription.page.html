@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Inscription</ion-card-title>
+      <ion-card-subtitle>Bienvenue sur ProLink ,Réseau professionnel</ion-card-subtitle>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nom de l'Utilisateur</ion-label>
+        <ion-input type="text" [(ngModel)]="userName"></ion-input>
+      </ion-item>
+      <div>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </div>
+      <ion-item>
+        <ion-label position="floating">Mot de Passe</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">confirmer Mot de Passe</ion-label>
+        <ion-input type="password" [(ngModel)]="confirmation"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-button expand="block" fill="outline" disabled="false" (click)="register()">Inscrivez-vous</ion-button>
+  </ion-card>
+
+</ion-content>
