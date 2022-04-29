@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entreprises",
+  "info": {
+    "singularName": "entreprise",
+    "pluralName": "entreprises",
+    "displayName": "Entreprise",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "IdEntre": {
+      "type": "uid"
+    },
+    "NomEntre": {
+      "type": "string"
+    },
+    "bioEntre": {
+      "type": "text"
+    },
+    "LogoEntre": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "emailEntre": {
+      "type": "email"
+    },
+    "TelEntre": {
+      "type": "string"
+    },
+    "SiteEntre": {
+      "type": "string"
+    },
+    "proprio": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "categorie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categorie.categorie"
+    },
+    "effectif": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::effectif.effectif"
+    },
+    "pays": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pays.pays"
+    },
+    "type_d_entreprise": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-d-entreprise.type-d-entreprise"
+    }
+  }
+}

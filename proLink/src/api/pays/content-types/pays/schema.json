@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "les_pays",
+  "info": {
+    "singularName": "pays",
+    "pluralName": "les-pays",
+    "displayName": "Pays"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nomPays": {
+      "type": "string"
+    },
+    "IconPays": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

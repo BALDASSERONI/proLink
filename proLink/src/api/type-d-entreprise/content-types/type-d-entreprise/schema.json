@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_d_entreprises",
+  "info": {
+    "singularName": "type-d-entreprise",
+    "pluralName": "type-d-entreprises",
+    "displayName": "Type d'entreprise"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TypeEntre": {
+      "type": "string"
+    }
+  }
+}

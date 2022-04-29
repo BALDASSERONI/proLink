@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "effectifs",
+  "info": {
+    "singularName": "effectif",
+    "pluralName": "effectifs",
+    "displayName": "Effectif",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "effectif": {
+      "type": "string"
+    }
+  }
+}
